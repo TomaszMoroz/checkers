@@ -241,7 +241,7 @@ const dragOver =(e)=>{
     let dragPiece = document.getElementById(dragId);
 
     if(dragPiece){
-        if(e.target.tagName === 'DIV' && isValidMove(dragPiece, e.target, false) && whiteBegins(dragPiece)){
+        if(e.target.tagName === 'DIV' && isValidMove(dragPiece, e.target, false)){
             e.dataTransfer.dropEffect = 'move';
         }else{
             e.dataTransfer.dropEffect = 'none';
